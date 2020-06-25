@@ -14,3 +14,19 @@ def beginning():
             break
 
 beginning()
+
+def newFunc():
+    print("Top! Dan gaan we galgje spelen!\n")
+
+    while True:
+        gameChoice = input("Wil je spelen?\n").upper()
+
+        if gameChoice == "JA":
+            break
+        elif gameChoice == "NEE":
+            print("Jammer! Fijne dag verder!")
+        else:
+            print("Antwoord alleen met ja en nee")
+            continue
+
+newFunc()
