@@ -25,6 +25,7 @@ def newFunc():
             break
         elif gameChoice == "NEE":
             print("Jammer! Fijne dag verder!")
+            break
         else:
             print("Antwoord alleen met ja en nee")
             continue
