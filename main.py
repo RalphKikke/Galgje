@@ -45,7 +45,7 @@ print ()
 time.sleep(2)
 
 #inleiding
-print("We gaan galgje spelen, kies een letter en raad het woord. Succes!")
+print("We gaan galgje spelen, kies een letter en raad het woord. Je hebt 5 beurten. Succes!")
 lengtewoord= len(computerwoord)
 temp= "." * lengtewoord
 print("het woord heeft" + str(lengtewoord) + "letters")
