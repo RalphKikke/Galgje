@@ -31,3 +31,16 @@ def newFunc():
             continue
 
 newFunc()
+
+#Laden
+print ("Laden...")
+
+
+#globale variabelen
+woordenlijst = ['informatica','informatiekunde', 'spelletje','aardigheidje', 'scholier', 'fotografie','waardebepaling', 'specialiteit', 'verzekering',
+'universiteit', 'heesterperk']
+computerwoord = woordenlijst[random.randrange(0, 10)]
+
+
+print ()
+time.sleep(2)
