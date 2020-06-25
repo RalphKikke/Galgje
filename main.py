@@ -41,7 +41,6 @@ woordenlijst = ['informatica','informatiekunde', 'spelletje','aardigheidje', 'sc
 'universiteit', 'heesterperk']
 computerwoord = woordenlijst[random.randrange(0, 10)]
 
-
 print ()
 time.sleep(2)
 
@@ -49,4 +48,4 @@ time.sleep(2)
 print("We gaan galgje spelen, kies een letter en raad het woord. Succes!")
 lengtewoord= len(computerwoord)
 temp= "." * lengtewoord
-print("het woord heeft" + str(lengtewoord) + "letters") 
+print("het woord heeft" + str(lengtewoord) + "letters")
