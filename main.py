@@ -14,7 +14,10 @@ def beginning():
             break
 
 def game(): 
-
+  #globale variabelen
+  woordenlijst = ['informatica','informatiekunde', 'spelletje' 'aardigheidje', 'scholier', 'fotografie','waardebepaling' 'specialiteit', 'verzekering','universiteit', 'heesterperk']
+  computerwoord = woordenlijst=random.choice(woordenlijst)
+  
   #inleiding
   print("We gaan galgje spelen, kies een letter en raad het woord. Je hebt 5 beurten. Succes!")
   lengtewoord= len(computerwoord)
@@ -45,6 +48,8 @@ def game():
     kies = input("Kies een letter.")
     count2=0
         
+    telt2=0
+
     if len(kies)>1:
         telt2 +=1
         print("Je kan maar 1 letter kiezen")
@@ -61,10 +66,12 @@ def game():
       print("Letters zover geraden",keuzes)
       print("Je hebt",+ beurten, 'meer keuzes')
 
-      if beurten==0:
+    if beurten==0:
           print("Het woord was", computerwoord,"je hebt verloren")
   
-      if kies in computerwoord:
+    if kies in computerwoord:
+      for char in kies:
+        print(char)
         print("Goed")
         print("Letters zover geraden: ", keuzes)
         print("Je hebt", + beurten, 'meer keuzes')
@@ -86,10 +93,6 @@ def newFunc():
            print("Antwoord alleen met ja en nee")
            continue
 newFunc()
-
-#globale variabelen
-woordenlijst = ['informatica','informatiekunde', 'spelletje' 'aardigheidje', 'scholier', 'fotografie','waardebepaling' 'specialiteit', 'verzekering','universiteit', 'heesterperk']
-computerwoord = woordenlijst[random.randrange(0, 11)]
 
 print ()
 time.sleep(2)
